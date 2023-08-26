@@ -93,7 +93,7 @@ class CheckoutSuccessView(View):
 
 @method_decorator(csrf_exempt, name='dispatch')
 class CheckoutFaildView(View):
-    template_name = 'failed.html'
+    template_name = 'orders/failed.html'
     def get(self, request, *args, **kwargs):
         return render(request, self.template_name)
 
